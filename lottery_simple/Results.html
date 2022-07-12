@@ -1,0 +1,32 @@
+{{ block title }}
+    Results
+    {{ if subsession.round_number == C.NUM_ROUNDS }}
+
+{{endif}}
+{{ endblock }}
+
+{{ block content }}
+<p>
+    Round {{participant.selected_round }} was randomly selected for payment.
+
+</p>
+
+ <p>
+     In this Round you chose <br />
+    {{ question }}
+    </p>
+
+Here is your random number between 1 and 100 that determines which of the outcomes you will be paid -  {{ probability_number }}
+<p>
+    You have won {{answer}} points
+</p>
+
+<br/>
+
+<p>
+    Thank you for your time!
+</p>
+
+{{ endblock }}
+
+
